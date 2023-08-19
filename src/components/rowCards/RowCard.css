@@ -1,0 +1,53 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+}
+.posters{
+    display: flex;
+   
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    cursor: pointer;
+}
+.posters::-webkit-scrollbar
+{
+    display: none;
+}
+.poster{
+    cursor: pointer;
+    max-height: 250px;
+    margin-right: 10px;
+}
+
+.smallposter{
+    max-height: 150px;
+    margin-bottom: 2rem;
+    margin-right: 5px;
+}
+
+
+.poster:hover{
+    transform:scale(1.1) ;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.smallposter:hover{
+    transform:scale(1.1) ;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Add these styles to your RowCard.css or in a style tag */
+.close-btn {
+    position: absolute;
+    top: 8px; /* Adjust the distance from the top as needed */
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin-right: 14rem;
+  }
+  
